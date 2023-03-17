@@ -1,6 +1,11 @@
-function GalleryNavigation () {
+import React from 'react';
+
+function GalleryNavigation(props) {
+	let galleries = props.galleries.map(ele => {
+		return <li key={ele.id}>{ele.name}</li> 
+	})
 	return ( 
-		<h1>Galleries</h1>
+		<h1>{galleries}</h1>
 	)
 }
 
