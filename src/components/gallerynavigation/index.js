@@ -15,7 +15,7 @@ function GalleryNavigation(props) {
 	return ( 
 		<nav>
 			<h1>{galleries}</h1>
-		
+		</nav>
 	)
 }
 
