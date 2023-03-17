@@ -1,11 +1,21 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
+
 
 function GalleryNavigation(props) {
 	let galleries = props.galleries.map(ele => {
-		return <li key={ele.id}>{ele.name}</li> 
+		return(
+			<nav>
+				<NavLink to="/">
+				<li key={ele.id}>{ele.name}</li> 
+				</NavLink>
+			</nav>
+		)
 	})
 	return ( 
-		<h1>{galleries}</h1>
+		<nav>
+			<h1>{galleries}</h1>
+		</nav>
 	)
 }
 
